@@ -51,6 +51,20 @@ img {
   width: min(760px, 92vw);
 }
 
+/* Top coverage line */
+.site-topbar {
+  margin: 0;
+  padding: 0.45rem 4vw;
+  text-align: center;
+  font-family: var(--font-heading);
+  font-size: clamp(0.6875rem, 1.5vw, 0.8125rem);
+  font-weight: 700;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--white);
+  background: var(--blue-dark);
+}
+
 /* Header */
 .site-header {
   position: sticky;
@@ -87,21 +101,25 @@ img {
 
 .header-tag {
   margin: 0;
-  font-size: 0.6875rem;
-  font-weight: 700;
-  letter-spacing: 0.12em;
-  text-transform: uppercase;
-  color: rgba(255, 255, 255, 0.55);
+  font-size: clamp(0.625rem, 1.35vw, 0.8125rem);
+  font-weight: 600;
+  letter-spacing: 0.02em;
+  text-transform: none;
+  line-height: 1.35;
+  color: rgba(255, 255, 255, 0.78);
   order: 3;
   width: 100%;
+  max-width: 42rem;
 }
 
 @media (min-width: 768px) {
   .header-tag {
     order: unset;
     width: auto;
+    flex: 1 1 12rem;
     margin-right: auto;
-    margin-left: -0.5rem;
+    margin-left: 0.75rem;
+    min-width: 0;
   }
 }
 
@@ -216,7 +234,7 @@ img {
   align-items: center;
   padding: 5rem 0 4rem;
   background-color: var(--navy);
-  background-image: url("hero.png");
+  background-image: url("images/hero.png");
   background-position: 65% center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -248,9 +266,17 @@ img {
   max-width: 640px;
 }
 
+.hero-badges {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.5rem 0.75rem;
+  margin: 0 0 1.25rem;
+}
+
 .hero-badge {
   display: inline-block;
-  margin: 0 0 1.25rem;
+  margin: 0;
   padding: 0.4rem 0.9rem;
   font-family: var(--font-heading);
   font-size: 0.75rem;
