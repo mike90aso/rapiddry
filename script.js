@@ -1,6 +1,6 @@
 // Update phone number in one place — display format and tel: link
-const PHONE_DISPLAY = "689-332-2002";
-const PHONE_TEL = "+16893322002";
+const PHONE_DISPLAY = "689-444-6903";
+const PHONE_TEL = "+16894446903";
 
 document.getElementById("year").textContent = new Date().getFullYear();
 

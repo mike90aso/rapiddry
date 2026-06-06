@@ -721,6 +721,64 @@ img {
   flex-wrap: wrap;
 }
 
+.btn-with-phone {
+  flex-direction: column;
+  gap: 0.15rem;
+  line-height: 1.2;
+}
+
+.btn-with-phone .phone-display {
+  font-weight: 800;
+  text-transform: none;
+  letter-spacing: 0.02em;
+}
+
+.btn-with-phone.btn-sm .phone-display {
+  font-size: 0.95em;
+}
+
+.btn-with-phone.btn-lg .phone-display,
+.btn-with-phone.btn-xl .phone-display {
+  font-size: 1.1em;
+}
+
+.btn-with-phone .btn-phone-stack {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 0.1rem;
+  line-height: 1.2;
+}
+
+.btn-phone-stack {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 0.1rem;
+  line-height: 1.2;
+}
+
+.btn-phone-stack .phone-display {
+  font-weight: 800;
+  text-transform: none;
+  letter-spacing: 0.02em;
+  font-size: 1.1em;
+}
+
+.fab-call-text {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  line-height: 1.15;
+  gap: 0.05rem;
+}
+
+.fab-call .phone-display {
+  font-size: 0.85em;
+  text-transform: none;
+  letter-spacing: 0.02em;
+}
+
 .phone-display {
   font-weight: 800;
 }
